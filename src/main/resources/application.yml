@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://IP:5432/postgres?currentSchema=tareas
+    username: postgres
+    password: ${DB_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      auto-commit: true
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: none
+    show-sql: true
